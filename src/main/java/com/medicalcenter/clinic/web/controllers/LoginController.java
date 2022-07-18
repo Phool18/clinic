@@ -26,6 +26,8 @@ public class LoginController {
 	@PostMapping(value = "/loginProcess")
 	public ModelAndView loginProcess(HttpServletRequest request, HttpSession session) {
 		ModelAndView mav = null;
+		session = request.getSession();
+		
 		User user = userService.login(request.getParameter("email"), request.getParameter("password"));
 		if(user != null) {
 			session.setAttribute("user", user);
