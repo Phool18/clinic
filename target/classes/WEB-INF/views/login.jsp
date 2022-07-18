@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ include file="/WEB-INF/views/include.jsp"%>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="ISO-8859-1">
 <link rel="icon" href="<c:url value ="/resources/img/icon.png"/>">

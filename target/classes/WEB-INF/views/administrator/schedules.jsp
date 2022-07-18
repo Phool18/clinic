@@ -110,12 +110,12 @@
 						<caption>Registro de Horarios</caption>
 						<thead>
 							<tr>
-								<th class='text-center'>Dia</th>
-								<th class='text-center'>Doctor</th>
-								<th class='text-center'>Hora de inicio</th>
-								<th class='text-center'>Hora de salida</th>
-								<th class='text-center'>Estado</th>
-								<th class='text-center'>Acciones</th>
+								<th class='text-center' scope="col">Dia</th>
+								<th class='text-center' scope="col">Doctor</th>
+								<th class='text-center' scope="col">Hora de inicio</th>
+								<th class='text-center' scope="col">Hora de salida</th>
+								<th class='text-center' scope="col">Estado</th>
+								<th class='text-center' scope="col">Acciones</th>
 							</tr>
 						</thead>
 						<tfoot>

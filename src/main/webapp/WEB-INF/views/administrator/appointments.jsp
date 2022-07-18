@@ -106,11 +106,11 @@
 						<caption>Registro de citas</caption>
 						<thead>
 							<tr>
-								<th class='text-center' scope="row">ID</th>
-								<th class='text-center' scope="row">Fecha</th>
-								<th class='text-center' scope="row">Hora</th>
-								<th class='text-center' scope="row">Paciente</th>
-								<th class='text-center' scope="row">Acciones</th>
+								<th class='text-center' scope="col">ID</th>
+								<th class='text-center' scope="col">Fecha</th>
+								<th class='text-center' scope="col">Hora</th>
+								<th class='text-center' scope="col">Paciente</th>
+								<th class='text-center' scope="col">Acciones</th>
 							</tr>
 						</thead>
 						<tfoot>

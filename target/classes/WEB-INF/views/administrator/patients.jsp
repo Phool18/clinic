@@ -104,11 +104,11 @@
 						<caption>Registro de Pacientes</caption>
 						<thead>
 							<tr>
-								<th class='text-center' scope="row">DNI</th>
-								<th class='text-center' scope="row">Nombres</th>
-								<th class='text-center' scope="row">Telefono</th>
-								<th class='text-center' scope="row">Genero</th>
-								<th class='text-center' scope="row">Acciones</th>
+								<th class='text-center' scope="col">DNI</th>
+								<th class='text-center' scope="col">Nombres</th>
+								<th class='text-center' scope="col">Telefono</th>
+								<th class='text-center' scope="col">Genero</th>
+								<th class='text-center' scope="col">Acciones</th>
 							</tr>
 						</thead>
 						<tfoot>
