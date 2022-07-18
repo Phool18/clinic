@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ include file="/WEB-INF/views/include.jsp"%>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="ISO-8859-1">
@@ -39,50 +39,55 @@
 	<nav class="sidebar">
 		<header>
 			<div class="image-text">
-				<div class="text logo-text">
+				<span class="image"> <img
+					src="<c:url value = "/resources/img/logo.png"/>" alt="logo">
+				</span>
+
+				<div class="text header-text">
 					<span class="name">MEDICAL CENTER</span>
 				</div>
 			</div>
 
+			<i class="bx bx-chevron-right toogle"></i>
 		</header>
-		<hr>
 		<div class="menu-bar">
 			<div class="menu">
 				<ul class="menu-links">
-					<li class="nav-link"><a href="/sistema/home"> <i
-							class='bx bx-home-alt icon'></i> <span class="text nav-text">Home</span>
+					<li class="nav-link"><a href="/sistema/home">
+							<em class='bx bx-home-alt icon'></em> <span class="text nav-text">Home</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/appointments"> <i
-							class='bx bx-food-menu icon'></i> <span class="text nav-text">Citas</span>
+					<li class="nav-link"><a href="/sistema/appointments" class="select"> <em
+							class='bx bx-food-menu icon'></em> <span class="text nav-text">Citas</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/patients"> <i
-							class='bx bx-user icon'></i> <span class="text nav-text">Pacientes</span>
+					<li class="nav-link"><a href="/sistema/patients"> <em
+							class='bx bx-user icon'></em> <span class="text nav-text">Pacientes</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/doctors"> <i
-							class='bx bx-user icon'></i> <span class="text nav-text">Doctores</span>
+					<li class="nav-link"><a href="/sistema/doctors"> <em
+							class='bx bx-user icon'></em> <span class="text nav-text">Doctores</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/schedules"> <i
-							class='bx bx-calendar icon'></i> <span class="text nav-text">Horarios</span>
+					<li class="nav-link"><a href="/sistema/schedules"> <em
+							class='bx bx-calendar icon'></em> <span class="text nav-text">Horarios</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/specialtys"> <i
-							class='bx bx-pie-chart-alt icon'></i> <span class="text nav-text">Especialidades</span>
+					<li class="nav-link"><a href="/sistema/specialtys"> <em
+							class='bx bx-pie-chart-alt icon'></em> <span class="text nav-text">Especialidades</span>
 					</a></li>
 
 				</ul>
 			</div>
 
 			<div class="bottom-content">
-				<li class=""><a href="/sistema/logout"> <i
-						class='bx bx-log-out icon'></i><span class="text nav-text">Logout</span>
-				</a></li>
+				<ul>
+					<li class=""><a href="/sistema/logout"> <em class="bx bx-log-out icon"></em>
+							<span class="text nav-text">Logout</span>
+					</a></li>
+				</ul>
 			</div>
 		</div>
-
 	</nav>
 
 	<section class="home">

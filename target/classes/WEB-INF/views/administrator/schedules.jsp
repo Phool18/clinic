@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ include file="/WEB-INF/views/include.jsp"%>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="ISO-8859-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,34 +55,39 @@
 
 			<i class="bx bx-chevron-right toogle"></i>
 		</header>
-
 		<div class="menu-bar">
 			<div class="menu">
 				<ul class="menu-links">
-					<li class="nav-link"><a href="/sistema/home"> <i
-							class="bx bx-home-alt icon"></i> <span class="text nav-text">Home</span>
+					<li class="nav-link"><a href="/sistema/home">
+							<em class='bx bx-home-alt icon'></em> <span class="text nav-text">Home</span>
 					</a></li>
-					<li class="nav-link"><a href="/sistema/appointments"> <i
-							class="bx bx-food-menu icon"></i> <span class="text nav-text">Citas</span>
+
+					<li class="nav-link"><a href="/sistema/appointments"> <em
+							class='bx bx-food-menu icon'></em> <span class="text nav-text">Citas</span>
 					</a></li>
-					<li class="nav-link"><a href="/sistema/patients"> <i
-							class="bx bx-user icon"></i> <span class="text nav-text">Pacientes</span>
+
+					<li class="nav-link"><a href="/sistema/patients"> <em
+							class='bx bx-user icon'></em> <span class="text nav-text">Pacientes</span>
 					</a></li>
-					<li class="nav-link"><a href="/sistema/doctors" > <i
-							class="bx bx-user icon"></i> <span class="text nav-text">Doctores</span>
+
+					<li class="nav-link"><a href="/sistema/doctors"> <em
+							class='bx bx-user icon'></em> <span class="text nav-text">Doctores</span>
 					</a></li>
-					<li class="nav-link"><a href="/sistema/schedules" class="select"> <i
-							class="bx bx-calendar icon"></i> <span class="text nav-text">Horarios</span>
+
+					<li class="nav-link"><a href="/sistema/schedules" class="select"> <em
+							class='bx bx-calendar icon'></em> <span class="text nav-text">Horarios</span>
 					</a></li>
-					<li class="nav-link"><a href="/sistema/specialtys"> <i
-							class="bx bx-pie-chart-alt icon"></i> <span class="text nav-text">Especialidades</span>
+
+					<li class="nav-link"><a href="/sistema/specialtys"> <em
+							class='bx bx-pie-chart-alt icon'></em> <span class="text nav-text">Especialidades</span>
 					</a></li>
+
 				</ul>
 			</div>
 
 			<div class="bottom-content">
 				<ul>
-					<li class=""><a href=""> <i class="bx bx-log-out icon"></i>
+					<li class=""><a href="/sistema/logout"> <em class="bx bx-log-out icon"></em>
 							<span class="text nav-text">Logout</span>
 					</a></li>
 				</ul>
