@@ -199,7 +199,7 @@
 	</div>
 
 	<script src='<c:url value="/resources/js/bootstrap.bundle.min.js" />'></script>
-	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxy9rx7HNQlGYl1kPzQho1wx4JwY8wC"></script>
 	<script
 		src="<c:url value = "/resources/js/datatables-simple-demo.js"/>"></script>
 </body>
