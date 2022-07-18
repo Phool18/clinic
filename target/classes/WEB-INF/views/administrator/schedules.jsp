@@ -53,7 +53,7 @@
 				</div>
 			</div>
 
-			<i class="bx bx-chevron-right toogle"></i>
+			<em class="bx bx-chevron-right toogle"></em>
 		</header>
 		<div class="menu-bar">
 			<div class="menu">
@@ -118,16 +118,6 @@
 								<th class='text-center' scope="col">Acciones</th>
 							</tr>
 						</thead>
-						<tfoot>
-							<tr>
-								<th>Dia</th>
-								<th>Doctor</th>
-								<th>Hora de inicio</th>
-								<th>Hora de salida</th>
-								<th>Estado</th>
-								<th>Acciones</th>
-							</tr>
-						</tfoot>
 						<tbody>
 							<c:forEach items="${scheduleList}" var="schedule">
 								<tr>
