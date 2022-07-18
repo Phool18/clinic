@@ -27,7 +27,7 @@ public class Appointment {
 	private LocalDate date;
 	private LocalDate time;
 	private String observation;
-	private String status = "activo";
+	private String status = "pendiente";
 	
 	@ManyToOne
 	@JoinColumn(name = "doctor_cmp")

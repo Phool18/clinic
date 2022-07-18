@@ -53,27 +53,27 @@
 		<div class="menu-bar">
 			<div class="menu">
 				<ul class="menu-links">
-					<li class="nav-link"><a href="/sistema/home">
+					<li class="nav-link"><a href="/clinic/home">
 							<em class='bx bx-home-alt icon'></em> <span class="text nav-text">Home</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/appointments" class="select"> <em
+					<li class="nav-link"><a href="/clinic/appointments" class="select"> <em
 							class='bx bx-food-menu icon'></em> <span class="text nav-text">Citas</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/patients"> <em
+					<li class="nav-link"><a href="/clinic/patients"> <em
 							class='bx bx-user icon'></em> <span class="text nav-text">Pacientes</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/doctors"> <em
+					<li class="nav-link"><a href="/clinic/doctors"> <em
 							class='bx bx-user icon'></em> <span class="text nav-text">Doctores</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/schedules"> <em
+					<li class="nav-link"><a href="/clinic/schedules"> <em
 							class='bx bx-calendar icon'></em> <span class="text nav-text">Horarios</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/specialtys"> <em
+					<li class="nav-link"><a href="/clinic/specialtys"> <em
 							class='bx bx-pie-chart-alt icon'></em> <span class="text nav-text">Especialidades</span>
 					</a></li>
 
@@ -82,7 +82,7 @@
 
 			<div class="bottom-content">
 				<ul>
-					<li class=""><a href="/sistema/logout"> <em class="bx bx-log-out icon"></em>
+					<li class=""><a href="/clinic/logout"> <em class="bx bx-log-out icon"></em>
 							<span class="text nav-text">Logout</span>
 					</a></li>
 				</ul>

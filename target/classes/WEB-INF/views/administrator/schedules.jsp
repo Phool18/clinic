@@ -58,27 +58,27 @@
 		<div class="menu-bar">
 			<div class="menu">
 				<ul class="menu-links">
-					<li class="nav-link"><a href="/sistema/home">
+					<li class="nav-link"><a href="/clinic/home">
 							<em class='bx bx-home-alt icon'></em> <span class="text nav-text">Home</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/appointments"> <em
+					<li class="nav-link"><a href="/clinic/appointments"> <em
 							class='bx bx-food-menu icon'></em> <span class="text nav-text">Citas</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/patients"> <em
+					<li class="nav-link"><a href="/clinic/patients"> <em
 							class='bx bx-user icon'></em> <span class="text nav-text">Pacientes</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/doctors"> <em
+					<li class="nav-link"><a href="/clinic/doctors"> <em
 							class='bx bx-user icon'></em> <span class="text nav-text">Doctores</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/schedules" class="select"> <em
+					<li class="nav-link"><a href="/clinic/schedules" class="select"> <em
 							class='bx bx-calendar icon'></em> <span class="text nav-text">Horarios</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/specialtys"> <em
+					<li class="nav-link"><a href="/clinic/specialtys"> <em
 							class='bx bx-pie-chart-alt icon'></em> <span class="text nav-text">Especialidades</span>
 					</a></li>
 
@@ -87,7 +87,7 @@
 
 			<div class="bottom-content">
 				<ul>
-					<li class=""><a href="/sistema/logout"> <em class="bx bx-log-out icon"></em>
+					<li class=""><a href="/clinic/logout"> <em class="bx bx-log-out icon"></em>
 							<span class="text nav-text">Logout</span>
 					</a></li>
 				</ul>
@@ -107,6 +107,7 @@
 			<div class="card mb-4">
 				<div class="card-body">
 					<table id="datatablesSimple">
+						<caption>Registro de Horarios</caption>
 						<thead>
 							<tr>
 								<th class='text-center'>Dia</th>
@@ -183,24 +184,6 @@
 						</div>
 						<div class='mb-3'>
 							<div class='row'>
-								<div class='form-label'>Horario dia</div>
-								<div class='col-6'>
-									<label class='form-label'>Ingreso</label> 
-								</div>
-								<div class='col-6'>
-									<label class='form-label'>Salida</label> 
-								</div>
-								<div class='col-6'>
-									<input type="time" name="start_time" class="form-control" required>
-								</div>
-								<div class='col-6'>
-									<input type="time" name="end_time" class="form-control" required>
-								</div>
-							</div>
-						</div>
-						<div class='mb-3'>
-							<div class='row'>
-								<div class='form-label'>Horario tarde</div>
 								<div class='col-6'>
 									<label class='form-label'>Ingreso</label> 
 								</div>

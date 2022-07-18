@@ -9,7 +9,7 @@ public interface PatientService {
 
 	public List<Patient> getAllPatients();
 	
-	public String addPatient(Patient patient);
+	public Boolean addPatient(Patient patient);
 	
 	public LocalDate convertToDate(String date);
 }

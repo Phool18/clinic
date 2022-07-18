@@ -22,12 +22,12 @@ public class PatientServiceImpl implements PatientService{
 	}
 
 	@Override
-	public String addPatient(Patient patient) {
-		if(patientRepository.validatePatient(patient.getDni()) == null) {
+	public Boolean addPatient(Patient patient) {
+		if(patientRepository.findByDni(patient.getDni()) == null) {
 			patientRepository.save(patient);
-			return "registered successfully";
+			return true;
 		}
-		return "patient already exists";
+		return false;
 	}
 
 	@Override

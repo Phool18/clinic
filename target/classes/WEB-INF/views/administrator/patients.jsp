@@ -28,11 +28,12 @@
 <script src='<c:url value="/resources/js/script.js" />'></script>
 </head>
 <body>
-	<%String add = request.getParameter("add");%>
-	<script type="text/javascript">
-		const msg = '<%=add%>';
-		alert(msg);
-	</script>
+
+	<c:if test="${message != null}">
+		<script type="text/javascript">
+			viewAlert('${message}', '${messageType}');
+		</script>
+	</c:if>
 	
 	<nav class="sidebar">
 		<header>
@@ -51,27 +52,27 @@
 		<div class="menu-bar">
 			<div class="menu">
 				<ul class="menu-links">
-					<li class="nav-link"><a href="/sistema/home">
+					<li class="nav-link"><a href="/clinic/home">
 							<em class='bx bx-home-alt icon'></em> <span class="text nav-text">Home</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/appointments"> <em
+					<li class="nav-link"><a href="/clinic/appointments"> <em
 							class='bx bx-food-menu icon'></em> <span class="text nav-text">Citas</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/patients"  class="select"> <em
+					<li class="nav-link"><a href="/clinic/patients"  class="select"> <em
 							class='bx bx-user icon'></em> <span class="text nav-text">Pacientes</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/doctors"> <em
+					<li class="nav-link"><a href="/clinic/doctors"> <em
 							class='bx bx-user icon'></em> <span class="text nav-text">Doctores</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/schedules"> <em
+					<li class="nav-link"><a href="/clinic/schedules"> <em
 							class='bx bx-calendar icon'></em> <span class="text nav-text">Horarios</span>
 					</a></li>
 
-					<li class="nav-link"><a href="/sistema/specialtys"> <em
+					<li class="nav-link"><a href="/clinic/specialtys"> <em
 							class='bx bx-pie-chart-alt icon'></em> <span class="text nav-text">Especialidades</span>
 					</a></li>
 
@@ -80,7 +81,7 @@
 
 			<div class="bottom-content">
 				<ul>
-					<li class=""><a href="/sistema/logout"> <em class="bx bx-log-out icon"></em>
+					<li class=""><a href="/clinic/logout"> <em class="bx bx-log-out icon"></em>
 							<span class="text nav-text">Logout</span>
 					</a></li>
 				</ul>
@@ -92,11 +93,10 @@
 
 		<div class='container'>
 
-			<h4 class='mt-4 text-welcome'>PACIENTES</h4>
+			<h4>PACIENTES</h4>
 			<hr>
-			<button class='btn btn-primary' data-bs-toggle="modal"
+			<button class='btn btn-success mb-4' data-bs-toggle="modal"
 				data-bs-target="#exampleModal">Agregar</button>
-			<div class='row jutify-content-center text-center'></div>
 			<br>
 			<div class="card mb-4">
 				<div class="card-body">
@@ -145,8 +145,7 @@
 		<div class="modal-dialog modal-dialog-scrollable">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">REGISTRAR NUEVA
-						ESPECIALIDAD</h5>
+					<h5 class="modal-title" id="exampleModalLabel">REGISTRAR NUEVO PACIENTE</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal"
 						aria-label="Close"></button>
 				</div>
