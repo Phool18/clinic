@@ -160,8 +160,7 @@
 						aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<form:form action='addSchedule' modelAttribute="schedule"
-						method="post">
+					<form action='addSchedule' method="post">
 						<div class='mb-3'>
 							<label class='form-label'>Seleccione un doctor</label>
 							<select class="js-example-basic-single js-states form-control" style="width: 100%;"  name="doctor_cmp">
@@ -203,7 +202,7 @@
 								data-bs-dismiss="modal">Close</button>
 							<button type="submit" class="btn btn-primary">Guardar</button>
 						</div>
-					</form:form>
+					</form>
 				</div>
 			</div>
 		</div>
