@@ -133,8 +133,7 @@
 						aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<form:form modelAttribute="specialty" action='addSpecialty'
-						method="post">
+					<form action='addSpecialty' method="post">
 						<div class="mb-3">
 							<input type="text" name='type' placeholder='Nombre de la especialidad' class='form-control'
 							required>
@@ -144,7 +143,7 @@
 								data-bs-dismiss="modal">Close</button>
 							<button type="submit" class="btn btn-primary">Guardar</button>
 						</div>
-					</form:form>
+					</form>
 				</div>
 			</div>
 		</div>

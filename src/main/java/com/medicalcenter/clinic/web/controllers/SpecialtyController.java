@@ -2,10 +2,11 @@ package com.medicalcenter.clinic.web.controllers;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -26,10 +27,14 @@ public class SpecialtyController {
 	}
 
 	@PostMapping(value = "/addSpecialty")
-	public ModelAndView addSpecialty(@ModelAttribute Specialty specialty, RedirectAttributes redirectAttributes) {
+	public ModelAndView addSpecialty(HttpServletRequest request, RedirectAttributes redirectAttributes) {
 		String message = null;
 		String messageType = null;
+		
 		try {
+			Specialty specialty = new Specialty();
+			specialty.setType(request.getParameter("type"));
+			
 			if (specialtyService.addSpecialty(specialty)) {
 				message = "Registrado correctamente";
 				messageType = "success";
@@ -40,6 +45,7 @@ public class SpecialtyController {
 		} catch (Exception e) {
 			return new ModelAndView("redirect:/specialtys");
 		}
+		
 		redirectAttributes.addFlashAttribute("message", message);
 		redirectAttributes.addFlashAttribute("messageType", messageType);
 		return new ModelAndView("redirect:/specialtys");
