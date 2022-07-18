@@ -1,5 +1,6 @@
 package com.medicalcenter.clinic.business.entities;
 
+import java.sql.Time;
 import java.time.LocalDate;
 
 import javax.persistence.Entity;
@@ -25,7 +26,7 @@ public class Appointment {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private LocalDate date;
-	private LocalDate time;
+	private Time time;
 	private String observation;
 	private String status = "pendiente";
 	

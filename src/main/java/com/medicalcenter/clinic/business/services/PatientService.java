@@ -12,4 +12,6 @@ public interface PatientService {
 	public Boolean addPatient(Patient patient);
 	
 	public LocalDate convertToDate(String date);
+	
+	public Patient getPatientByDni(String dni);
 }

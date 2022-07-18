@@ -4,10 +4,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Medical Center - Citas</title>
-<!----======== CSS ======== -->
 <link rel="icon" href="<c:url value ="/resources/img/icon.png"/>">
 <link rel="stylesheet"
 	href="<c:url value = "/resources/css/bootstrap.min.css"/>">
@@ -18,15 +18,21 @@
 <link
 	href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css"
 	rel="stylesheet" />
-<!----===== Boxicons CSS ===== -->
 <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'
 	rel='stylesheet'>
-
-<!----===== Javascript ===== -->
 <script type="text/javascript"
 	src="<c:url value="/resources/js/sweetalert2.min.js" />"></script>
-<script type="text/javascript"
-	src="<c:url value="/resources/js/script.js"/>"></script>
+<script src='<c:url value="/resources/js/alert_message.js" />'></script>
+<script src='<c:url value="/resources/js/jquery-3.6.0.min.js" />'></script>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	    $('.js-example-basic-single').select2({
+	    	dropdownParent: $('#exampleModal')
+	    });
+	});
+	</script>
 </head>
 <body>
 
@@ -94,11 +100,10 @@
 
 		<div class='container'>
 
-			<h4 class='mt-4 text-welcome'>CITAS</h4>
+			<h4>CITAS</h4>
 			<hr>
-			<button class='btn btn-primary' data-bs-toggle="modal"
+			<button class='btn btn-success mb-4' data-bs-toggle="modal"
 				data-bs-target="#exampleModal">Agregar</button>
-			<div class='row jutify-content-center text-center'></div>
 			<br>
 			<div class="card mb-4">
 				<div class="card-body">
@@ -106,31 +111,20 @@
 						<caption>Registro de citas</caption>
 						<thead>
 							<tr>
-								<th class='text-center' scope="col">ID</th>
+								<th class='text-center' scope="col">Doctor</th>
+								<th class='text-center' scope="col">Paciente</th>
 								<th class='text-center' scope="col">Fecha</th>
 								<th class='text-center' scope="col">Hora</th>
-								<th class='text-center' scope="col">Paciente</th>
 								<th class='text-center' scope="col">Acciones</th>
 							</tr>
 						</thead>
-						<tfoot>
-							<tr>
-								<th scope="row">ID</th>
-								<th scope="row">Tipo</th>
-								<th scope="row">Estado</th>
-								<th scope="row">Acciones</th>
-							</tr>
-						</tfoot>
-
 						<tbody>
-							<c:forEach items="${specialtys}" var="sp">
-								<c:url var="deleteSpecialty" value="/deleteSpecialty">
-									<c:param name="specialtyId" value="${sp.id}" />
-								</c:url>
+							<c:forEach items="${appointmentList}" var="appointment">
 								<tr>
-									<td class='text-center'>${sp.id}</td>
-									<td class='text-center'>${sp.type }</td>
-									<td class='text-center'>${sp.status }</td>
+									<td class='text-center'>${appointment.patient.lastnames} <span>${appointment.patient.names}</span> </td>
+									<td class='text-center'>${appointment.doctor.names} <span>${appointment.doctor.names}</span></td>
+									<td class='text-center'>${appointment.date}</td>
+									<td class='text-center'>${appointment.time}</td>
 									<td class='text-center'><a class='bx bx-trash bx-sm'
 										href="${deleteSpecialty}"></a></td>
 								</tr>
@@ -157,19 +151,18 @@
 					<form action='addAppointment' method="post">
 						<div class='mb-3'>
 							<label class="form-label">Doctor</label>
-							<select class="form-select" onchange="mostrarHorario('${doctor.names}')">
-								<option selected>Seleccione un doctor</option>
-								<c:forEach items="${doctorList}" var="doctor" >
-									<option value="${doctor.cmp}">${doctor.cmp} - ${doctor.lastnames}, ${doctor.names}</option>
+							<select class="js-example-basic-single js-states form-control" style="width: 100%;"  name="doctor_cmp">
+  								<c:forEach items='${doctorList}' var="doctor">
+									<option value="${doctor.cmp}">${doctor.cmp}-
+										${doctor.lastnames}, ${doctor.names}</option>
 								</c:forEach>
 							</select>
 						</div>
 						<div class='mb-3'>
 							<label class="form-label">Paciente</label>
-							<select class="form-select">
-								<option selected>Seleccione un paciente</option>
-								<c:forEach items="${patientList}" var="patient" >
-									<option value="${patient.id}" >${patient.dni} - ${patient.lastnames}, ${patient.names}</option>
+							<select class="js-example-basic-single js-states form-control" style="width: 100%;"  name="patient_dni">
+  								<c:forEach items='${patientList}' var="patient">
+									<option value="${patient.dni}">${patient.lastnames}, ${patient.names}</option>
 								</c:forEach>
 							</select>
 						</div>
@@ -201,5 +194,6 @@
 		crossorigin="anonymous"></script>
 	<script
 		src="<c:url value = "/resources/js/datatables-simple-demo.js"/>"></script>
+	<script src='<c:url value="/resources/js/script.js" />'></script>
 </body>
 </html>

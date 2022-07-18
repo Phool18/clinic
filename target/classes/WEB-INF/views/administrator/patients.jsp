@@ -25,7 +25,6 @@
 <!----===== Javascript ===== -->
 <script type="text/javascript"
 	src="<c:url value="/resources/js/sweetalert2.min.js" />"></script>
-<script src='<c:url value="/resources/js/script.js" />'></script>
 </head>
 <body>
 
@@ -203,7 +202,7 @@
 	<script src='<c:url value="/resources/js/bootstrap.bundle.min.js" />'></script>
 	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
 		crossorigin="anonymous"></script>
-	<script
-		src="<c:url value = "/resources/js/datatables-simple-demo.js"/>"></script>
+	<script src="<c:url value = "/resources/js/datatables-simple-demo.js"/>"></script>
+	<script src='<c:url value="/resources/js/script.js" />'></script>
 </body>
 </html>

@@ -200,7 +200,7 @@
 
 	<script src='<c:url value="/resources/js/bootstrap.bundle.min.js" />'></script>
 	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
-	<script
-		src="<c:url value = "/resources/js/datatables-simple-demo.js"/>"></script>
+	<script src="<c:url value = "/resources/js/datatables-simple-demo.js"/>"></script>
+	<script src='<c:url value="/resources/js/script.js" />'></script>
 </body>
 </html>

@@ -36,4 +36,9 @@ public class PatientServiceImpl implements PatientService{
 		return LocalDate.parse(date, formatter);
 	}
 
+	@Override
+	public Patient getPatientByDni(String dni) {
+		return patientRepository.findByDni(dni);
+	}
+
 }
