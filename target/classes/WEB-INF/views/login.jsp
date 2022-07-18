@@ -23,8 +23,7 @@
 						<div class='card card-login'>
 							<div class='card-body'>
 								<h5 class='text-center mb-3'>Iniciar Sesión</h5>
-								<form:form action='loginProcess' method="post"
-									modelAttribute="userLogin">
+								<form action='loginProcess' method="post">
 									<div class='mb-3'>
 										<input type="email" name='email'
 											placeholder='Correo electrónico' class='form-control'
@@ -35,7 +34,7 @@
 											placeholder='Contraseña' class='form-control' required>
 									</div>
 									<button type="submit" class='btn btn-primary w-100'>Ingresar</button>
-								</form:form>
+								</form>
 								<c:if test="${error!=null}">
 									<div class="alert alert-danger text-center alerta-error"
 										role="alert">
