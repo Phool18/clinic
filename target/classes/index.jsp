@@ -1,12 +1,2 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="ISO-8859-1">
-<title>Medical Center</title>
-</head>
-<body>
-
-</body>
-</html>
+<%@ include file="/WEB-INF/views/include.jsp" %>
+<c:redirect url="/login"></c:redirect>

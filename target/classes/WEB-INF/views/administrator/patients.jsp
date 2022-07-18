@@ -46,7 +46,7 @@
 				</div>
 			</div>
 
-			<i class="bx bx-chevron-right toogle"></i>
+			<em class="bx bx-chevron-right toogle"></em>
 		</header>
 		<div class="menu-bar">
 			<div class="menu">

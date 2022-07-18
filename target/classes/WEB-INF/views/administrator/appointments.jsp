@@ -48,7 +48,7 @@
 				</div>
 			</div>
 
-			<i class="bx bx-chevron-right toogle"></i>
+			<em class="bx bx-chevron-right toogle"></em>
 		</header>
 		<div class="menu-bar">
 			<div class="menu">
@@ -102,7 +102,8 @@
 			<br>
 			<div class="card mb-4">
 				<div class="card-body">
-					<table id="datatablesSimple">
+					<table id="datatablesSimple" >
+						<caption>Appointments</caption>
 						<thead>
 							<tr>
 								<th class='text-center' scope="row">ID</th>
