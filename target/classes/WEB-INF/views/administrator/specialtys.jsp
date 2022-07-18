@@ -96,6 +96,7 @@
 			<div class="card mb-4">
 				<div class="card-body">
 					<table id="datatablesSimple" class="text-center">
+						<caption>Registro de Especialidades</caption>
 						<thead>
 							<tr>
                                 <th scope="col" class="text-center">ID</th>

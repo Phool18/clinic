@@ -105,6 +105,7 @@
 			<div class="card mb-4">
 				<div class="card-body">
 					<table id="datatablesSimple" class="text-center">
+						<caption>Registro de Doctores</caption>
 						<thead>
 							<tr>
                                 <th scope="col" class="text-center">CMP</th>

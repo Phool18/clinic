@@ -101,6 +101,7 @@
 			<div class="card mb-4">
 				<div class="card-body">
 					<table id="datatablesSimple">
+						<caption>Registro de Pacientes</caption>
 						<thead>
 							<tr>
 								<th class='text-center' scope="row">DNI</th>
